@@ -36,7 +36,7 @@ func test_pod(kclient *client.Clientset, stop chan struct{}) {
 		case <-stop:
 			break
 		default:
-			glog.V(4).Infof("another test")
+			glog.V(4).Infof("another round Pod test")
 		}
 
 		pods, err := kclient.CoreV1().Pods("").List(metav1.ListOptions{})
@@ -145,6 +145,5 @@ func main() {
 	go test_pod(kclient, stop)
 	go test_kubelet(config, kletConfig, nodes, stop)
 
-	//select {}
-	time.Sleep(time.Second*100)
+	select {}
 }
