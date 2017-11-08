@@ -8,7 +8,7 @@ However, different versions/platforms/flavors(such as openshift, GKE) of Kuberne
 For example, to access GKE's API server, [it is best to use the in-cluster settings](https://github.com/kubernetes/client-go/issues/242),
 otherwise, the client needs to install `gcloud`.
 
-So the purpose of this project is to **help developer find the best way to get metrics from kubelets, and get Pods from Kubernetes API server **.
+So the purpose of this project is to **help developer find the best way to get metrics from kubelets, and get Pods from Kubernetes API server**.
 
 
 ## kubelet Port for metrics
