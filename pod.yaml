@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-    name: test-get-pods 
+    name: test-kubelet 
 spec:
     containers:
-    - name: test-pod
+    - name: kubelet-pod
       image: beekman9527/kubelet-pod:latest 
       imagePullPolicy: Always
       args:

@@ -32,6 +32,13 @@ func setFlags(c *kubeletConfig) {
 func test_pod(kclient *client.Clientset, stop chan struct{}) {
 
 	for {
+		select {
+		case <-stop:
+			break
+		default:
+			glog.V(4).Infof("another test")
+		}
+
 		pods, err := kclient.CoreV1().Pods("").List(metav1.ListOptions{})
 		if err != nil {
 			glog.Error(err.Error)
@@ -57,9 +64,11 @@ func test_pod(kclient *client.Clientset, stop chan struct{}) {
 		glog.V(2).Infof("sleeping 20 seconds")
 		time.Sleep(20 * time.Second)
 	}
+
+	glog.V(2).Infof("test_pod is quitting.")
 }
 
-func test_kubelet(config *rest.Config, kletConfig *kubeletConfig, hosts []*api.Node) {
+func test_kubelet(config *rest.Config, kletConfig *kubeletConfig, hosts []*api.Node, stop chan struct{}) {
 	kletClient, err := NewKubeletClient(kletConfig, config)
 	if err != nil {
 		glog.Errorf("Failed to create kubeletClient: %v", err)
@@ -69,6 +78,13 @@ func test_kubelet(config *rest.Config, kletConfig *kubeletConfig, hosts []*api.N
 	i := 0
 	host := hosts[i % len(hosts)]
 	for {
+		select {
+		case <- stop:
+			break
+		default:
+			glog.V(4).Infof("another round(%d) test of kubelet.", i)
+		}
+
 		glog.V(2).Infof("Get stats for host: %v", host.Name)
 		kletClient.GetMachineInfo(host.Name)
 		kletClient.GetSummary(host.Name)
@@ -77,6 +93,8 @@ func test_kubelet(config *rest.Config, kletConfig *kubeletConfig, hosts []*api.N
 		i ++
 		i = i % len(hosts)
 	}
+
+	glog.V(2).Infof("test_kubelet is quitting.")
 }
 
 func getNodes(kclient *client.Clientset) ([]*api.Node, error) {
@@ -123,8 +141,10 @@ func main() {
 
 	//3. start the workers
 	stop := make(chan struct{})
+	defer close(stop)
 	go test_pod(kclient, stop)
-	go test_kubelet(config, kletConfig, nodes)
+	go test_kubelet(config, kletConfig, nodes, stop)
 
-	select {}
+	//select {}
+	time.Sleep(time.Second*100)
 }
