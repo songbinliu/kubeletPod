@@ -1,11 +1,10 @@
 # kubeletPod
-Tester to get Metrics from Kubelets and Pods from K8s API server.
-When we want to monitor the Pods in a Kubernetes cluster, we need the pod's information (labels, resource limit/requests), 
+When we want to monitor the Pods in a Kubernetes cluster, we need the pods information (labels, resource limit/requests), 
 as wells as the resource(CPU/Memory/Network) usage by containers. 
 
-Pods' information can be got from Kubernetes' API server, and the resource usage metrics can be got by scraping the kubelets.
+Pods information can be got from Kubernetes API server, and the resource usage metrics can be got by scraping the kubelets.
 However, different versions/platforms/flavors(such as openshift, GKE) of Kubernetes clusters have different settings.
-For example, to access GKE's API server, [it is best to use the in-cluster settings](https://github.com/kubernetes/client-go/issues/242),
+For example, to access GKE Kubernetes API server, [it is best to use the in-cluster settings](https://github.com/kubernetes/client-go/issues/242),
 otherwise, the client needs to install `gcloud`.
 
 So the purpose of this project is to **help developer find the best way to get metrics from kubelets, and get Pods from Kubernetes API server**.
