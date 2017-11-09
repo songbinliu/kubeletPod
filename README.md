@@ -31,7 +31,7 @@ make product
 sh build.sh
 ```
 
-####Deploy it in kubernetes as a Pod:
+#### Deploy it in kubernetes as a Pod:
 ```yaml
 apiVersion: v1
 kind: Pod
