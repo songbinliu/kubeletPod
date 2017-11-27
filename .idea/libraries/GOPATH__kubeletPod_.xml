@@ -50,6 +50,7 @@
       <root url="file://$PROJECT_DIR$/../swagger" />
       <root url="file://$PROJECT_DIR$/../github.com" />
       <root url="file://$PROJECT_DIR$/../bk.k8s.io" />
+      <root url="file://$PROJECT_DIR$/../honnef.co" />
       <root url="file://$PROJECT_DIR$/../hash-browns" />
       <root url="file://$PROJECT_DIR$/../weblatency" />
       <root url="file://$PROJECT_DIR$/../grpc_v_rest" />
@@ -58,7 +59,6 @@
       <root url="file://$PROJECT_DIR$/../atomic" />
       <root url="file://$PROJECT_DIR$/../tensorflowGo" />
       <root url="file://$PROJECT_DIR$/../inceptionPredict" />
-      <root url="file://$PROJECT_DIR$/../gke" />
       <root url="file://$PROJECT_DIR$/../abcProxy" />
       <root url="file://$PROJECT_DIR$/../youtube" />
       <root url="file://$PROJECT_DIR$/../turboClient" />
@@ -115,6 +115,7 @@
       <root url="file://$PROJECT_DIR$/../swagger" />
       <root url="file://$PROJECT_DIR$/../github.com" />
       <root url="file://$PROJECT_DIR$/../bk.k8s.io" />
+      <root url="file://$PROJECT_DIR$/../honnef.co" />
       <root url="file://$PROJECT_DIR$/../hash-browns" />
       <root url="file://$PROJECT_DIR$/../weblatency" />
       <root url="file://$PROJECT_DIR$/../grpc_v_rest" />
@@ -123,7 +124,6 @@
       <root url="file://$PROJECT_DIR$/../atomic" />
       <root url="file://$PROJECT_DIR$/../tensorflowGo" />
       <root url="file://$PROJECT_DIR$/../inceptionPredict" />
-      <root url="file://$PROJECT_DIR$/../gke" />
       <root url="file://$PROJECT_DIR$/../abcProxy" />
       <root url="file://$PROJECT_DIR$/../youtube" />
       <root url="file://$PROJECT_DIR$/../turboClient" />

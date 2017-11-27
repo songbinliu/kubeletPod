@@ -76,7 +76,6 @@ func test_kubelet(config *rest.Config, kletConfig *kubeletConfig, hosts []*api.N
 	}
 
 	i := 0
-	host := hosts[i % len(hosts)]
 	for {
 		select {
 		case <- stop:
@@ -85,13 +84,15 @@ func test_kubelet(config *rest.Config, kletConfig *kubeletConfig, hosts []*api.N
 			glog.V(4).Infof("another round(%d) test of kubelet.", i)
 		}
 
+		i = i % len(hosts)
+		host := hosts[i]
+		i ++
+
 		glog.V(2).Infof("Get stats for host: %v", host.Name)
 		kletClient.GetMachineInfo(host.Name)
 		kletClient.GetSummary(host.Name)
 		glog.V(2).Infof("sleeping 20 seconds")
 		time.Sleep(30*time.Second)
-		i ++
-		i = i % len(hosts)
 	}
 
 	glog.V(2).Infof("test_kubelet is quitting.")
