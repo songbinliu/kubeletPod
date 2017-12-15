@@ -29,6 +29,7 @@
       <root url="file://$PROJECT_DIR$/../testTensorflow" />
       <root url="file://$PROJECT_DIR$/../inceptionServer1" />
       <root url="file://$PROJECT_DIR$/../jsontest" />
+      <root url="file://$PROJECT_DIR$/../appMetric" />
       <root url="file://$PROJECT_DIR$/../golearn" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../tensorflow_serving" />
@@ -52,6 +53,7 @@
       <root url="file://$PROJECT_DIR$/../bk.k8s.io" />
       <root url="file://$PROJECT_DIR$/../honnef.co" />
       <root url="file://$PROJECT_DIR$/../hash-browns" />
+      <root url="file://$PROJECT_DIR$/../my.appMetric" />
       <root url="file://$PROJECT_DIR$/../weblatency" />
       <root url="file://$PROJECT_DIR$/../grpc_v_rest" />
       <root url="file://$PROJECT_DIR$/../envoy-steps" />
@@ -59,6 +61,7 @@
       <root url="file://$PROJECT_DIR$/../atomic" />
       <root url="file://$PROJECT_DIR$/../tensorflowGo" />
       <root url="file://$PROJECT_DIR$/../inceptionPredict" />
+      <root url="file://$PROJECT_DIR$/../xmetric" />
       <root url="file://$PROJECT_DIR$/../abcProxy" />
       <root url="file://$PROJECT_DIR$/../youtube" />
       <root url="file://$PROJECT_DIR$/../turboClient" />
@@ -94,6 +97,7 @@
       <root url="file://$PROJECT_DIR$/../testTensorflow" />
       <root url="file://$PROJECT_DIR$/../inceptionServer1" />
       <root url="file://$PROJECT_DIR$/../jsontest" />
+      <root url="file://$PROJECT_DIR$/../appMetric" />
       <root url="file://$PROJECT_DIR$/../golearn" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../tensorflow_serving" />
@@ -117,6 +121,7 @@
       <root url="file://$PROJECT_DIR$/../bk.k8s.io" />
       <root url="file://$PROJECT_DIR$/../honnef.co" />
       <root url="file://$PROJECT_DIR$/../hash-browns" />
+      <root url="file://$PROJECT_DIR$/../my.appMetric" />
       <root url="file://$PROJECT_DIR$/../weblatency" />
       <root url="file://$PROJECT_DIR$/../grpc_v_rest" />
       <root url="file://$PROJECT_DIR$/../envoy-steps" />
@@ -124,6 +129,7 @@
       <root url="file://$PROJECT_DIR$/../atomic" />
       <root url="file://$PROJECT_DIR$/../tensorflowGo" />
       <root url="file://$PROJECT_DIR$/../inceptionPredict" />
+      <root url="file://$PROJECT_DIR$/../xmetric" />
       <root url="file://$PROJECT_DIR$/../abcProxy" />
       <root url="file://$PROJECT_DIR$/../youtube" />
       <root url="file://$PROJECT_DIR$/../turboClient" />

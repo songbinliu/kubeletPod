@@ -119,6 +119,7 @@ func getNodes(kclient *client.Clientset) ([]*api.Node, error) {
 func main() {
 	kletConfig := NewDefaultKubeletConfig()
 	setFlags(kletConfig)
+	glog.V(2).Infof("config: %++v", kletConfig)
 
 	//1. create kclient
 	config := GetKubeConfig(masterUrl, kubeConfig)
