@@ -11,12 +11,12 @@ So the purpose of this project is to **help developer find the best way to get m
 
 
 ## kubelet Port for metrics
-|-|Kubernetes(1.7)|Openshfit(3.4)|Openshift(3.7)|GKE|
+|-|Kubernetes(1.7)|GKE(1.7)|Openshfit(3.4)|Openshift(3.7)|
 |-|-|-|-|-|
-|kubeletPort| 10255 | 10250| 10250 | 10255|
-|http.scheme| HTTP | HTTPS| HTTPS | HTTP|
+|kubeletPort| 10255 | 10255| 10250| 10250 | 10255|
+|http.scheme| HTTP  | HTTP | HTTPS| HTTPS | HTTP|
 
-Note1: Openshift version is 3.4 and 3.7, Kubernetes is 1.7;
+Note1: Openshift enterprise version is 3.4 and OpenShift Container Platform 3.7;
 
 Note2: GKE (google container engine) 1.6+ uses [`http and port 10255`](https://github.com/prometheus/prometheus/issues/2606).
 
