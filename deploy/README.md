@@ -12,7 +12,7 @@ metadata:
   name: turbo-user
 ```
 
-create it by `oc` or `kubectl`
+create it by `oc`
 ```console
 # oc create -f my-sa.yaml -n <my-namespace>
 ```
