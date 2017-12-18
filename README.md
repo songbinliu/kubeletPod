@@ -30,6 +30,10 @@ make product
 sh build.sh
 ```
 
+#### Deploy it in Openshift
+To deploy it in openshift, we have to create a service account and grant nodes access to it.
+[Details](https://github.com/songbinliu/kubeletPod/tree/master/deploy)
+
 #### Deploy it in kubernetes as a Pod:
 ```yaml
 apiVersion: v1
