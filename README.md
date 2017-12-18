@@ -35,14 +35,14 @@ sh build.sh
 apiVersion: v1
 kind: Pod
 metadata:
-    name: test-get-pods 
+  name: test-get-pods 
 spec:
-    containers:
-    - name: test-pod
-      image: beekman9527/kubelet-pod:latest 
-      imagePullPolicy: Always
-      args:
-      - --v=4
-      - --kubeletHttps=false
-      - --kubeletPort=10255
+  containers:
+  - name: test-pod
+    image: beekman9527/kubelet-pod:latest 
+    imagePullPolicy: Always
+    args:
+    - --v=4
+    - --kubeletHttps=false
+    - --kubeletPort=10255
 ```
