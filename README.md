@@ -12,7 +12,7 @@ So the purpose of this project is to **help developer find the best way to get m
 
 ## kubelet Port for metrics
 |-|Kubernetes(1.7)|Openshfit(3.4)|Openshift(3.7)|GKE|
-|-|-|-|-|
+|-|-|-|-|-|
 |kubeletPort| 10255 | 10250| 10250 | 10255|
 |http.scheme| HTTP | HTTPS| HTTPS | HTTP|
 
