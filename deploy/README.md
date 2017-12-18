@@ -1,4 +1,4 @@
-KubeletPod needs `view` access to Pods and nodes. 
+KubeletPod needs `view` access to Kubernetes Pods and Nodes from API. 
 To make sure it has the right to access these resources, a [service account](https://kubernetes.io/docs/admin/service-accounts-admin/) is defined, 
 and assign enought privileges for the pod.
 
