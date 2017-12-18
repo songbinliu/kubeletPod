@@ -49,6 +49,6 @@ spec:
     imagePullPolicy: Always
     args:
     - --v=4
-    - --kubeletHttps=false
-    - --kubeletPort=10255
+    - --kubeletHttps=true
+    - --kubeletPort=10250
 ```
