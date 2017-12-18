@@ -30,7 +30,7 @@ make product
 sh build.sh
 ```
 
-#### Deploy it in Openshift
+#### Deploy it in Openshift (needs service account and role binding)
 To deploy it in openshift, we have to create a service account and grant nodes access to it.
 [Details](https://github.com/songbinliu/kubeletPod/tree/master/deploy)
 
